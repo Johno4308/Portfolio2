@@ -1,12 +1,12 @@
 import React, { Fragment } from "react";
 import Hero from "../components/Hero/Hero";
-import Locations from "../components/Locations/Locations";
+import Projects from "../components/Project/Project";
 
 const Home = () => {
   return (
     <Fragment>
       <Hero />
-      <Locations />
+      <Projects />
     </Fragment>
   );
 };

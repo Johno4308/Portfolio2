@@ -1,13 +1,12 @@
 import React from "react";
-import LeafSVG from "../../assets/LeafSVG";
-
+import Logos from "../../assets/Logo.png";
 import classes from "./Logo.module.scss";
 
 function Logo() {
   return (
     <a href="/" className={classes.logo}>
-      <LeafSVG fillColor={"white"} />
-      <span>Tropic</span>
+      <img src={Logos} height="42" width="42" className={classes.logo__img} />
+      <span>Portfolio</span>
     </a>
   );
 }

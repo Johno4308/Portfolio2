@@ -5,6 +5,10 @@
   align-items: center;
   text-decoration: none;
   color: $white;
+
+  &__img {
+    margin-right: 5px;
+  }
 }
 
 span {

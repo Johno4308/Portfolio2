@@ -3,10 +3,10 @@ import { Route, Routes } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Home from "./pages/Home";
 import Footer from "./components/Footer/Footer";
-import LearnMore from "./pages/LearnMore";
+import ContactMe from "./pages/ContactMe";
 import BookNow from "./pages/BookNow";
-import Pricing from "./pages/Pricing";
-import Location from "./pages/Locations";
+import Projects from "./pages/Projects";
+import AboutMe from "./pages/AboutMe";
 
 function App() {
   return (
@@ -14,9 +14,9 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/learnmore" element={<LearnMore />} />
-        <Route path="/locations" element={<Location />} />
-        <Route path="/pricing" element={<Pricing />} />
+        <Route path="/contactme" element={<ContactMe />} />
+        <Route path="/aboutme" element={<AboutMe />} />
+        <Route path="/projects" element={<Projects />} />
         <Route path="/booknow" element={<BookNow />} />
       </Routes>
       <Footer />
