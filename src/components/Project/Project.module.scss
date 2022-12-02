@@ -62,7 +62,7 @@
         cursor: pointer;
         position: relative;
         border-radius: $borderRadius;
-        border: 2px solid $white;
+        border: 2px solid $dark;
         transition: 0.3s ease all;
         box-shadow: $boxShadow;
 
@@ -106,7 +106,7 @@
           align-items: center;
           justify-content: center;
           height: 25%;
-          background: $white;
+          background: $dark;
           border-bottom-left-radius: $borderRadius;
           border-bottom-right-radius: $borderRadius;
 
@@ -118,20 +118,21 @@
           &__location {
             margin-left: 6px;
             font-size: 1.2rem;
-            color: $dark;
+            color: $white;
             letter-spacing: $letterSpacing;
           }
         }
 
         &__tag {
           position: absolute;
-          background: $white;
+          background: $dark;
           top: -12px;
           left: $spacing-sm;
           padding: 6px 8px;
           border-radius: $borderRadius;
           font-size: 0.8rem;
           letter-spacing: $letterSpacing;
+          color: $white;
         }
       }
     }

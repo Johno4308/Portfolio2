@@ -5,7 +5,7 @@ import classes from "./Project.module.scss";
 import { IoLocationOutline } from "react-icons/io5";
 import { BsArrowRight } from "react-icons/bs";
 
-import BoraBoraJPG from "./../../assets/borabora.jpg";
+import color from "./../../assets/color.jpg";
 import MaldivesJPG from "./../../assets/maldives.jpg";
 import CaboSanLucasJPG from "./../../assets/cabosanlucas.jpg";
 import CroatiaJPG from "./../../assets/croatia.jpg";
@@ -14,7 +14,7 @@ import AlbaniaJPG from "./../../assets/albania.jpg";
 import { Link } from "react-router-dom";
 
 const locationData = [
-  { id: 1, location: "Bora Bora", isFeatured: true, img: BoraBoraJPG },
+  { id: 1, location: "Caffiend", isFeatured: true, img: color },
   { id: 2, location: "Maldives", isFeatured: true, img: MaldivesJPG },
   {
     id: 3,
@@ -25,7 +25,7 @@ const locationData = [
   { id: 4, location: "Croatia", isFeatured: false, img: CroatiaJPG },
   { id: 5, location: "Greece", isFeatured: false, img: GreeceJPG },
   { id: 6, location: "Albania", isFeatured: true, img: AlbaniaJPG },
-  { id: 7, location: "Bora Bora", isFeatured: true, img: BoraBoraJPG },
+  { id: 7, location: "Caffiend", isFeatured: true, img: color },
   { id: 8, location: "Maldives", isFeatured: true, img: MaldivesJPG },
   {
     id: 9,
@@ -58,7 +58,7 @@ const Projects = ({ page }) => {
                   </h2>
                 </div>
                 {isFeatured && (
-                  <div className={classes.gallery__item__tag}>Featured</div>
+                  <div className={classes.gallery__item__tag}>JavaScript</div>
                 )}
               </div>
             ))}
