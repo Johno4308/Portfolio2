@@ -2,10 +2,12 @@ import React from "react";
 
 import classes from "./Project.module.scss";
 
-import { IoLocationOutline } from "react-icons/io5";
+import { FaGithub } from "react-icons/fa";
+
+//import { IoLocationOutline } from "react-icons/Bs/Github";
 import { BsArrowRight } from "react-icons/bs";
 
-import color from "./../../assets/color.jpg";
+import color from "./../../assets/Project1.png";
 import MaldivesJPG from "./../../assets/maldives.jpg";
 import CaboSanLucasJPG from "./../../assets/cabosanlucas.jpg";
 import CroatiaJPG from "./../../assets/croatia.jpg";
@@ -52,7 +54,7 @@ const Projects = ({ page }) => {
                 />
                 <div className={classes.overlay} />
                 <div className={classes.gallery__item__content}>
-                  <IoLocationOutline />
+                  <FaGithub />
                   <h2 className={classes.gallery__item__content__location}>
                     {location}
                   </h2>
