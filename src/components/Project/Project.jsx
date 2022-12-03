@@ -6,7 +6,7 @@ import { FaGithub } from "react-icons/fa";
 
 //import { IoLocationOutline } from "react-icons/Bs/Github";
 import { BsArrowRight } from "react-icons/bs";
-
+import apiIMG from "./../../assets/apiIMG.png";
 import color from "./../../assets/Project1.png";
 import MaldivesJPG from "./../../assets/maldives.jpg";
 import CaboSanLucasJPG from "./../../assets/cabosanlucas.jpg";
@@ -17,7 +17,7 @@ import { Link } from "react-router-dom";
 
 const locationData = [
   { id: 1, location: "Caffiend", isFeatured: true, img: color },
-  { id: 2, location: "Maldives", isFeatured: true, img: MaldivesJPG },
+  { id: 2, location: "Meme API", isFeatured: true, img: apiIMG },
   {
     id: 3,
     location: "Cabo San Lucas",
