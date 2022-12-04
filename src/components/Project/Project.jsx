@@ -6,35 +6,27 @@ import { FaGithub } from "react-icons/fa";
 
 //import { IoLocationOutline } from "react-icons/Bs/Github";
 import { BsArrowRight } from "react-icons/bs";
+import caffinedIMG from "./../../assets/caffinedIMG.png";
 import apiIMG from "./../../assets/apiIMG.png";
-import color from "./../../assets/Project1.png";
-import MaldivesJPG from "./../../assets/maldives.jpg";
-import CaboSanLucasJPG from "./../../assets/cabosanlucas.jpg";
-import CroatiaJPG from "./../../assets/croatia.jpg";
-import GreeceJPG from "./../../assets/greece.jpg";
-import AlbaniaJPG from "./../../assets/albania.jpg";
+import villageIMG from "./../../assets/villageIMG.png";
+import containerIMG from "./../../assets/containerIMG.png";
+import guestHouseIMG from "./../../assets/guestHouseIMG.png";
+import calculatorIMG from "./../../assets/calculatorIMG.png";
+
 import { Link } from "react-router-dom";
 
 const locationData = [
-  { id: 1, location: "Caffiend", isFeatured: true, img: color },
+  { id: 1, location: "Caffiend", isFeatured: true, img: caffinedIMG },
   { id: 2, location: "Meme API", isFeatured: true, img: apiIMG },
   {
     id: 3,
-    location: "Cabo San Lucas",
-    isFeatured: false,
-    img: CaboSanLucasJPG,
+    location: "Village",
+    isFeatured: true,
+    img: villageIMG,
   },
-  { id: 4, location: "Croatia", isFeatured: false, img: CroatiaJPG },
-  { id: 5, location: "Greece", isFeatured: false, img: GreeceJPG },
-  { id: 6, location: "Albania", isFeatured: true, img: AlbaniaJPG },
-  { id: 7, location: "Caffiend", isFeatured: true, img: color },
-  { id: 8, location: "Maldives", isFeatured: true, img: MaldivesJPG },
-  {
-    id: 9,
-    location: "Cabo San Lucas",
-    isFeatured: false,
-    img: CaboSanLucasJPG,
-  },
+  { id: 4, location: "Container", isFeatured: false, img: containerIMG },
+  { id: 5, location: "GuestHouse", isFeatured: false, img: guestHouseIMG },
+  { id: 6, location: "Calculator", isFeatured: false, img: calculatorIMG },
 ];
 
 const Projects = ({ page }) => {
@@ -62,13 +54,16 @@ const Projects = ({ page }) => {
                 {isFeatured && (
                   <div className={classes.gallery__item__tag}>JavaScript</div>
                 )}
+                {!isFeatured && (
+                  <div className={classes.gallery__item__tag}>C++</div>
+                )}
               </div>
             ))}
           </div>
           {!page && (
             <div className={classes.locations__content__viewmore}>
               <Link to="/locations">
-                view more <BsArrowRight />
+                Read More <BsArrowRight />
               </Link>
             </div>
           )}
