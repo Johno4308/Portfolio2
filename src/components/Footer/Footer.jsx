@@ -1,12 +1,6 @@
 import React from "react";
 import Button from "../../UI/Button/Button";
-import {
-  FaYoutube,
-  FaInstagram,
-  FaTwitter,
-  FaSnapchatGhost,
-  FaFacebook,
-} from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 import classes from "./Footer.module.scss";
 import Logo from "../../UI/Logo/Logo";
@@ -46,13 +40,7 @@ const footerColumns = [
   },
 ];
 
-const socials = [
-  <FaYoutube />,
-  <FaInstagram />,
-  <FaTwitter />,
-  <FaSnapchatGhost />,
-  <FaFacebook />,
-];
+const socials = [<FaGithub />, <FaLinkedin />];
 
 const Footer = () => {
   return (
@@ -60,39 +48,43 @@ const Footer = () => {
       <footer className={classes.footer}>
         <div className={classes.footer__newsletter}>
           <h4 className={classes.footer__newsletter__headline}>
-            Join the Tropic newsletter to receive groundbreaking travel rewards
+            FEEL FREE TO CONTACT ME!
           </h4>
-          <span>Unsubscribe at any time.</span>
+          <span>
+            I am looking for any opportunity in software development. I am
+            extremely hard working and adapt well to new frameworks. Really
+            looking forward to hearing from you.
+          </span>
+          <div className={classes.footer__newsletter__form}>
+            <input className={classes.input} type="name" placeholder="Name" />
+          </div>
+          <div className={classes.footer__newsletter__form}>
+            <input className={classes.input} type="email" placeholder="Email" />
+          </div>
           <div className={classes.footer__newsletter__form}>
             <input
               className={classes.input}
-              type="email"
-              placeholder="Your Email"
+              placeholder="Subject"
+              type="text"
+              name="subject"
+              required
             />
-            <Button>Subscribe</Button>
           </div>
-        </div>
-        <div className={classes.footer__content}>
-          {footerColumns.map(({ id, headline, links }) => (
-            <div className={classes.footer__content__col} key={id}>
-              <div className={classes.footer__content__col__headline}>
-                {headline}
-              </div>
-              <ul className={classes.footer__content__col__links}>
-                {links.map((link, index) => (
-                  <li key={index + 1}>
-                    <a href="/">{link}</a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+          <div className={classes.footer__newsletter__form}>
+            <textarea
+              className={classes.textarea}
+              placeholder="Message"
+              name="message"
+              required
+            ></textarea>
+          </div>
+          <div className={classes.footer__newsletter__form}>
+            <Button>Submit</Button>
+          </div>
         </div>
         <div className={classes.footer__base}>
           <Logo />
-          <span className={classes.footer__base__year}>
-            Tropic&nbsp;&copy;&nbsp;{new Date().getFullYear()}
-          </span>
+
           <ul className={classes.footer__base__socials}>
             {socials.map((icon, index) => (
               <li key={index + 1}>

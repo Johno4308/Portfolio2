@@ -13,7 +13,7 @@ const Navbar = ({ isMenu, menuToggle }) => {
           <Link to="/projects">Projects</Link>
         </li>
         <li onClick={menuToggle}>
-          <Link to="/contactme">Contact Me</Link>
+          <Link to="/footer">Contact Me</Link>
         </li>
       </ul>
     </nav>

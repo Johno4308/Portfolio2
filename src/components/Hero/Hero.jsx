@@ -30,7 +30,7 @@ const HomePageContent = () => {
   );
 };
 
-const Hero = ({ isDynamic, children }) => {
+const Hero = ({ isDynamic, children, children1, children2 }) => {
   const randomImage = images[Math.floor(Math.random() * images.length)];
   return (
     <div className={classes.container}>
@@ -40,7 +40,13 @@ const Hero = ({ isDynamic, children }) => {
           {!isDynamic && <HomePageContent />}
 
           {isDynamic && (
-            <h1 className={classes.hero__content__title}>{children}</h1>
+            <>
+              <h1 className={classes.hero__content__title}>{children}</h1>
+              <span className={classes.hero__content__tagline}>
+                {children1}
+              </span>
+              <p className={classes.hero__content__description}>{children2}</p>
+            </>
           )}
         </div>
       </div>

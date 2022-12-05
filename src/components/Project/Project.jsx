@@ -2,7 +2,7 @@ import React from "react";
 
 import classes from "./Project.module.scss";
 
-import { FaGithub } from "react-icons/fa";
+import { FaCodeBranch } from "react-icons/fa";
 
 //import { IoLocationOutline } from "react-icons/Bs/Github";
 import { BsArrowRight } from "react-icons/bs";
@@ -33,10 +33,10 @@ const Projects = ({ page }) => {
   const mapData = !page ? locationData.slice(0, 6) : locationData;
   return (
     <div className={classes.container}>
-      <div className={`${classes.locations} ${page ? classes.page : ""}`}>
-        <div className={classes.locations__content}>
-          <h2 className={classes.locations__content__title}>Projects</h2>
-          <div className={classes.locations__content__gallery}>
+      <div className={`${classes.projects} ${page ? classes.page : ""}`}>
+        <div className={classes.projects__content}>
+          <h2 className={classes.projects__content__title}>Projects</h2>
+          <div className={classes.projects__content__gallery}>
             {mapData.map(({ id, location, isFeatured, img }) => (
               <div className={classes.gallery__item} key={id}>
                 <img
@@ -46,7 +46,7 @@ const Projects = ({ page }) => {
                 />
                 <div className={classes.overlay} />
                 <div className={classes.gallery__item__content}>
-                  <FaGithub />
+                  <FaCodeBranch />
                   <h2 className={classes.gallery__item__content__location}>
                     {location}
                   </h2>
@@ -61,8 +61,8 @@ const Projects = ({ page }) => {
             ))}
           </div>
           {!page && (
-            <div className={classes.locations__content__viewmore}>
-              <Link to="/locations">
+            <div className={classes.projects__content__viewmore}>
+              <Link to="/projects">
                 Read More <BsArrowRight />
               </Link>
             </div>
