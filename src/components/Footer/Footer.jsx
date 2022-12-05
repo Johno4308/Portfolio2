@@ -5,49 +5,14 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import classes from "./Footer.module.scss";
 import Logo from "../../UI/Logo/Logo";
 
-const footerColumns = [
-  {
-    id: 1,
-    headline: "About us",
-    links: [
-      "Pricing",
-      "Our Story",
-      "Testimonials",
-      "Investors",
-      "Terms of Service",
-    ],
-  },
-  {
-    id: 2,
-    headline: "Contact us",
-    links: ["Contact", "Support", "Destinations", "Careers", "Refund Policy"],
-  },
-  {
-    id: 3,
-    headline: "Content",
-    links: [
-      "Submit Video",
-      "Submit Photo",
-      "Influencer",
-      "Marketing",
-      "Privacy Policy",
-    ],
-  },
-  {
-    id: 4,
-    headline: "Socials",
-    links: ["Youtube", "Facebook", "Snapchat", "Twitter", "Instagram"],
-  },
-];
-
 const socials = [<FaGithub />, <FaLinkedin />];
 
 const Footer = () => {
   return (
     <div className={classes.container}>
       <footer className={classes.footer}>
-        <div className={classes.footer__newsletter}>
-          <h4 className={classes.footer__newsletter__headline}>
+        <div className={classes.footer__title}>
+          <h4 className={classes.footer__title__headline}>
             FEEL FREE TO CONTACT ME!
           </h4>
           <span>
@@ -55,13 +20,13 @@ const Footer = () => {
             extremely hard working and adapt well to new frameworks. Really
             looking forward to hearing from you.
           </span>
-          <div className={classes.footer__newsletter__form}>
+          <div className={classes.footer__title__form}>
             <input className={classes.input} type="name" placeholder="Name" />
           </div>
-          <div className={classes.footer__newsletter__form}>
+          <div className={classes.footer__title__form}>
             <input className={classes.input} type="email" placeholder="Email" />
           </div>
-          <div className={classes.footer__newsletter__form}>
+          <div className={classes.footer__title__form}>
             <input
               className={classes.input}
               placeholder="Subject"
@@ -70,7 +35,7 @@ const Footer = () => {
               required
             />
           </div>
-          <div className={classes.footer__newsletter__form}>
+          <div className={classes.footer__title__form}>
             <textarea
               className={classes.textarea}
               placeholder="Message"
@@ -78,7 +43,7 @@ const Footer = () => {
               required
             ></textarea>
           </div>
-          <div className={classes.footer__newsletter__form}>
+          <div className={classes.footer__title__form}>
             <Button>Submit</Button>
           </div>
         </div>
@@ -88,7 +53,7 @@ const Footer = () => {
           <ul className={classes.footer__base__socials}>
             {socials.map((icon, index) => (
               <li key={index + 1}>
-                <a href="/">{icon}</a>
+                <a href="/https://github.com/Johno4308">{icon}</a>
               </li>
             ))}
           </ul>
