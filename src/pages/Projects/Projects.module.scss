@@ -1,0 +1,77 @@
+@import "./../../styles/variables.scss";
+
+.container {
+  position: relative;
+  height: 100vh;
+  min-height: 800px;
+  margin: 0 auto;
+  overflow-y: scroll;
+}
+
+.video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  background: rgba($dark, 0.3);
+  padding-top: $headerHeight2;
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 275px;
+  gap: $spacing-md;
+  margin-bottom: $spacing-sm;
+  align-items: center;
+  justify-content: center;
+
+  @include breakpoint(sm) {
+    grid-template-columns: repeat(1fr);
+    grid-auto-rows: 250px;
+  }
+
+  @include breakpoint(lg) {
+    grid-template-columns: repeat(1fr);
+  }
+
+  &__content {
+    margin: 0 1.5rem;
+    background: rgba($dark, 0.6);
+    backdrop-filter: blur(2px);
+    padding: $spacing-lg;
+    border-radius: $borderRadius;
+    text-align: left;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: $letterSpacing;
+    text-transform: uppercase;
+
+    @include breakpoint(md) {
+      text-align: center;
+    }
+
+    &__title {
+      font-size: 2.4rem;
+      color: $white;
+      font-weight: 700;
+      margin-bottom: $spacing-sm;
+      //cos the elements inside get smaller, we use multiple media queries
+      @include breakpoint(md) {
+        font-size: 3rem;
+      }
+      @include breakpoint(sm) {
+        font-size: 3.8rem;
+      }
+    }
+  }
+}

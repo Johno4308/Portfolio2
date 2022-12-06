@@ -21,9 +21,7 @@ const Hero = () => {
             <h1 className={classes.hero__content__title}>
               Hi, I'm Johnathan..
             </h1>
-            <span className={classes.hero__content__tagline}>
-              A Web Developer
-            </span>
+            <span className={classes.hero__content__tagline}>A Developer</span>
             <p className={classes.hero__content__description}>
               And an South African that arrived in London on an ancestral work
               visa, in December 2022. Whilst working full time in recruitment, I
