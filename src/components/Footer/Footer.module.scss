@@ -80,6 +80,7 @@
         margin-bottom: $spacing-sm;
         padding: $spacing-sm $spacing-md;
         border-radius: $borderRadius;
+        width: 100%;
 
         @include breakpoint(md) {
           width: 700px;
