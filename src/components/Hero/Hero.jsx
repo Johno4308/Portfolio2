@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import Button from "./../../UI/Button/Button";
+import Button from "./../../Ui/Button/Button";
 import coverIMG1 from "./../../assets/Background1.png";
 import coverIMG2 from "./../../assets/Background2.png";
 import coverIMG3 from "./../../assets/Background3.png";
