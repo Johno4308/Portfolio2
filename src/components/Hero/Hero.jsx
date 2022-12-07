@@ -23,10 +23,15 @@ const Hero = () => {
             </h1>
             <span className={classes.hero__content__tagline}>A Developer</span>
             <p className={classes.hero__content__description}>
-              And an South African that arrived in London on an ancestral work
-              visa, in December 2022. Whilst working full time in recruitment, I
-              have been studying a BSC in Computing through the University of
-              South Africa. I will complete my degree by the end of 2023.
+              And a South African that arrived in London on an ancestral work
+              visa, in December 2022. I have a degree in business management and
+              a background in recruitment, which over the years has strengthened
+              my expertise in quality service and client satisfaction. Since
+              2020 I have been studying a B.Sc. in Computing through the
+              University of South Africa distance learning which I will complete
+              at the end of 2023. With my move to London, I am looking to become
+              a Junior Developer, and would an opportunity to grow within an
+              organisation.
             </p>
             <div className={classes.hero__content__cta}>
               <Button to="aboutme" outline>
