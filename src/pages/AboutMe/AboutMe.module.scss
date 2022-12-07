@@ -2,7 +2,7 @@
 
 .container {
   position: relative;
-  height: 110vh;
+  height: 100vh;
   min-height: 800px;
   margin: 0 auto;
   overflow-y: scroll;
@@ -27,7 +27,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 130%;
+  height: 100%;
   background: rgba($dark, 0.3);
   padding-top: $headerHeight;
   display: flex;
@@ -67,7 +67,7 @@
     }
 
     &__tagline {
-      font-size: 1.6rem;
+      font-size: 1rem;
       font-weight: 700;
       color: $light;
       font-style: italic;
@@ -84,7 +84,7 @@
       text-transform: capitalize;
       color: $light;
       width: 100%;
-      font-size: 1rem;
+      font-size: 0.8rem;
       margin-bottom: $spacing-lg;
       line-height: 20px;
       @include breakpoint(sm) {
@@ -101,7 +101,7 @@
       text-transform: capitalize;
       color: $light;
       width: 100%;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       margin-bottom: $spacing-lg;
       line-height: 20px;
       color: $white;
