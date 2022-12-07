@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../../UI/Button/Button";
+import Button from "./../../Ui/Button/Button";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 import classes from "./Footer.module.scss";
