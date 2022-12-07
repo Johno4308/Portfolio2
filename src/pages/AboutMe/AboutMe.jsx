@@ -1,15 +1,16 @@
 import React, { Fragment } from "react";
 import classes from "./AboutMe.module.scss";
-
 import coverIMG1 from "./../../assets/Background1.png";
 import coverIMG2 from "./../../assets/Background2.png";
 import coverIMG3 from "./../../assets/Background3.png";
 import coverIMG4 from "./../../assets/Background4.png";
 import coverIMG5 from "./../../assets/Background5.png";
+import useScrollToTop from "../../hooks/useScrollToTop";
 
 const images = [coverIMG1, coverIMG2, coverIMG3, coverIMG4, coverIMG5];
 
 const AboutMe = () => {
+  useScrollToTop();
   const randomImage = images[Math.floor(Math.random() * images.length)];
   return (
     <Fragment>

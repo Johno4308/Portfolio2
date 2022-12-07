@@ -17,9 +17,11 @@ import ContainerProj2IMG from "./../../assets/containerProj2.jpg";
 import GuesthouseProj1IMG from "./../../assets/guesthouseProj1.jpg";
 import GuesthouseProj2IMG from "./../../assets/guesthouseProj2.jpg";
 import CalculatorProj1IMG from "./../../assets/calculatorProj1.png";
+import useScrollToTop from "../../hooks/useScrollToTop";
 const images = [coverIMG1, coverIMG2, coverIMG3, coverIMG4, coverIMG5];
 
 const Projects = () => {
+  useScrollToTop();
   const randomImage = images[Math.floor(Math.random() * images.length)];
   return (
     <div className={classes.container}>
