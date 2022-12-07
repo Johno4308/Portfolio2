@@ -38,12 +38,12 @@ const AboutMe = () => {
           </div>
           <div className={classes.aboutme__content}>
             <p className={classes.aboutme__content__description}>
-              I enjoy submerging myself in challenge daily, as I believe it’s
-              the only place where personal growth happens. Coding and learning
-              new frameworks has become that orientation of challenge and my
-              personal growth. And I love it to say the least. Enough so that at
-              the age of 34 I’m changing careers and moving country to pursue a
-              career in it.
+              I enjoy submerging myself in new challenging environments, as I
+              believe it’s the only place where personal growth happens. Coding
+              and learning new frameworks has become that orientation of
+              challenge and my personal growth. And I love it to say the least.
+              Enough so that at the age of 34 I’m changing careers and moving
+              country to pursue a career in it.
             </p>
             <p className={classes.aboutme__content__description}>
               I am looking for an opportunity to grow within an organisation. To
