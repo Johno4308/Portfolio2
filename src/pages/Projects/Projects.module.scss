@@ -73,5 +73,81 @@
         font-size: 3.8rem;
       }
     }
+
+    &__tagline {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: $light;
+      font-style: italic;
+      margin-bottom: $spacing-md;
+      @include breakpoint(md) {
+        font-size: 1.4rem;
+      }
+      @include breakpoint(sm) {
+        font-size: 1.6rem;
+      }
+    }
+
+    &__item {
+      cursor: pointer;
+      position: relative;
+      border-radius: $borderRadius;
+      border: 2px solid $light;
+      transition: 0.3s ease all;
+      box-shadow: $boxShadow;
+
+      &__img {
+        padding: $spacing-sm;
+      }
+    }
+
+    &__description {
+      text-transform: none;
+      color: $light;
+      width: 100%;
+      font-size: 1rem;
+      margin-bottom: $spacing-lg;
+      line-height: 20px;
+      padding-top: $spacing-md;
+      @include breakpoint(sm) {
+        font-size: 1.1rem;
+        width: 80%;
+      }
+      @include breakpoint(md) {
+        width: 60%;
+        margin: 0 auto $spacing-lg auto;
+      }
+    }
+
+    &__cta {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      button {
+        width: 100%;
+      }
+      button:not(:last-child) {
+        margin-bottom: $spacing-sm;
+      }
+
+      @include breakpoint(md) {
+        align-items: center;
+        button {
+          width: auto;
+        }
+        margin: 0 auto;
+        flex-direction: row;
+        button:not(:last-child) {
+          margin-bottom: 0;
+          margin-right: $spacing-sm;
+        }
+      }
+
+      &__icon {
+        margin-right: $spacing-sm;
+        top: $spacing-md;
+      }
+    }
   }
 }
