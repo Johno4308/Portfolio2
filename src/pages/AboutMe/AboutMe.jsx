@@ -35,6 +35,8 @@ const AboutMe = () => {
               was brought into the world to do? Or is this what I was created
               for? To huddle under the blankets and stay warm? – Marcus Aurelius
             </p>
+          </div>
+          <div className={classes.aboutme__content}>
             <p className={classes.aboutme__content__description}>
               I enjoy submerging myself in challenge daily, as a believe it’s
               the only place where personal growth happens. Coding and learning
