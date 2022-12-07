@@ -164,12 +164,12 @@ const Projects = () => {
             <img
               className={classes.hero__content__item__img}
               src={ContainerProj1IMG}
-              width="400px"
+              width="300px"
             />
             <img
               className={classes.hero__content__item__img}
               src={ContainerProj2IMG}
-              width="400px"
+              width="300px"
             />
           </div>
 
@@ -205,12 +205,12 @@ const Projects = () => {
             <img
               className={classes.hero__content__item__img}
               src={GuesthouseProj1IMG}
-              width="400px"
+              width="300px"
             />
             <img
               className={classes.hero__content__item__img}
               src={GuesthouseProj2IMG}
-              width="400px"
+              width="300px"
             />
           </div>
 
