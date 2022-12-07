@@ -3,7 +3,7 @@ import Button from "./../../Ui/Button/Button";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 import classes from "./Footer.module.scss";
-import Logo from "../../UI/Logo/Logo";
+import Logo from "../../Ui/Logo/Logo";
 import { useRef } from "react";
 
 const Footer = () => {
