@@ -66,9 +66,9 @@ const Projects = () => {
             Built with React and Scss. Purpose of this project was to practise
             breakpoints and setting up the site to be mobile responsive. Each of
             the 18 coffees was stored as an object which I then mapped over to
-            create both the Nav list and coffee instruction component. Extra the
-            mug in the first image is a 3D model that rotates and is interactive
-            using React-Three-Fiber.
+            create both the Nav list and coffee instruction component. Some
+            added extra, the mug in the first image is a 3D model that rotates
+            and is interactive using React-Three-Fiber.
           </p>
 
           <div className={classes.hero__content__cta}>
@@ -94,7 +94,7 @@ const Projects = () => {
         <div className={classes.hero__content}>
           <h1 className={classes.hero__content__title}>MEME API</h1>
           <span className={classes.hero__content__tagline}>
-            A simply meme making tool.
+            A simple meme making tool.
           </span>
           <span className={classes.hero__content__codes}>| React | CSS |</span>
           <div className={classes.hero__content__item}>
@@ -177,7 +177,7 @@ const Projects = () => {
             Built with C++ and QT. Its a server program to stack cylinder and
             box objects onto pallets and send the XML objects over a network to
             client program, which displays shipping objects in a table model
-            view. This university project required the following techniques.
+            view. This university project required the following techniques:
             Factory and Momento Design Patterns, XML writing using DOM and
             XMLStreamer, TCP sockets, Threading, Serialization of class objects,
             Table model view
@@ -197,7 +197,7 @@ const Projects = () => {
         <div className={classes.hero__content}>
           <h1 className={classes.hero__content__title}>GUESTHOUSE</h1>
           <span className={classes.hero__content__tagline}>
-            Have a few rooms you need to let out, this is the perfect
+            Have a few rooms you need to let out? this is the perfect
             application to do so.
           </span>
           <span className={classes.hero__content__codes}>| C++ | QT |</span>
@@ -217,7 +217,7 @@ const Projects = () => {
           <p className={classes.hero__content__description}>
             Built with C++ and QT. Its a 5 room BnB booking application that
             books in guests, checks dates and room availability. This university
-            project required the following techniques. To hard code a UI without
+            project required the following techniques: To hard code a UI without
             using QT onboard designer, Implementation of user input validation,
             Serialization of class objects, Converting and retrieving data
             to/from XML.
@@ -250,7 +250,7 @@ const Projects = () => {
           <p className={classes.hero__content__description}>
             Built with C++ and QT. Its a calculator with four basic operations,
             namely addition, subtraction, multiplication, and division. This
-            university project required the following techniques. To hard code a
+            university project required the following techniques: To hard code a
             UI without using QT onboard designer, Implementation of Singleton
             Design Pattern, Implementation of Factory Design Pattern.
           </p>

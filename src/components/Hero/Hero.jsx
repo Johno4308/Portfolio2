@@ -30,8 +30,8 @@ const Hero = () => {
               2020 I have been studying a B.Sc. in Computing through the
               University of South Africa distance learning which I will complete
               at the end of 2023. With my move to London, I am looking to become
-              a Junior Developer, and would an opportunity to grow within an
-              organisation.
+              a Junior Developer, and would love an opportunity to grow within
+              an organisation.
             </p>
             <div className={classes.hero__content__cta}>
               <Button to="aboutme" outline>

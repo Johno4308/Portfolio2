@@ -25,7 +25,7 @@ const AboutMe = () => {
             <p className={classes.aboutme__content__description}>
               I am a very goal orientated individual, whether that be through
               fitness, work or studies. I believe as an individual we are put
-              onto this earth to server a purpose beyond ones-self, for the
+              onto this earth to serve a purpose beyond ones self, for the
               greater good of society.
             </p>
             <p className={classes.aboutme__content__quote}>
@@ -38,7 +38,7 @@ const AboutMe = () => {
           </div>
           <div className={classes.aboutme__content}>
             <p className={classes.aboutme__content__description}>
-              I enjoy submerging myself in challenge daily, as a believe it’s
+              I enjoy submerging myself in challenge daily, as I believe it’s
               the only place where personal growth happens. Coding and learning
               new frameworks has become that orientation of challenge and my
               personal growth. And I love it to say the least. Enough so that at
