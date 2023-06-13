@@ -1,11 +1,11 @@
 import React from "react";
 import { FaGithub, FaCoffee } from "react-icons/fa";
 import classes from "./Projects.module.scss";
-import coverIMG1 from "./../../assets/Background1.png";
-import coverIMG2 from "./../../assets/Background2.png";
-import coverIMG3 from "./../../assets/Background3.png";
-import coverIMG4 from "./../../assets/Background4.png";
-import coverIMG5 from "./../../assets/Background5.png";
+import coverIMG1 from "./../../assets/Background1.jpeg";
+import coverIMG2 from "./../../assets/Background2.jpeg";
+import coverIMG3 from "./../../assets/Background3.jpeg";
+import coverIMG4 from "./../../assets/Background4.jpeg";
+import coverIMG5 from "./../../assets/Background5.jpeg";
 import CaffiendProj1IMG from "./../../assets/caffiendProj1.jpg";
 import CaffiendProj2IMG from "./../../assets/caffiendProj2.jpg";
 import CaffiendProj3IMG from "./../../assets/CaffiendProj3.jpg";

@@ -1,10 +1,10 @@
 import React, { Fragment } from "react";
 import classes from "./AboutMe.module.scss";
-import coverIMG1 from "./../../assets/Background1.png";
-import coverIMG2 from "./../../assets/Background2.png";
-import coverIMG3 from "./../../assets/Background3.png";
-import coverIMG4 from "./../../assets/Background4.png";
-import coverIMG5 from "./../../assets/Background5.png";
+import coverIMG1 from "./../../assets/Background1.jpeg";
+import coverIMG2 from "./../../assets/Background2.jpeg";
+import coverIMG3 from "./../../assets/Background3.jpeg";
+import coverIMG4 from "./../../assets/Background4.jpeg";
+import coverIMG5 from "./../../assets/Background5.jpeg";
 import useScrollToTop from "../../hooks/useScrollToTop";
 
 const images = [coverIMG1, coverIMG2, coverIMG3, coverIMG4, coverIMG5];
