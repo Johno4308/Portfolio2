@@ -39,25 +39,29 @@ const Projects = ({ page }) => {
           <div className={classes.projects__content__gallery}>
             {mapData.map(({ id, location, isFeatured, img }) => (
               <div className={classes.gallery__item} key={id}>
-                <img
-                  src={img}
-                  alt={location}
-                  className={classes.gallery__item__img}
-                />
-                <div className={classes.overlay} />
-                <div className={classes.gallery__item__content}>
-                  <FaCodeBranch />
-                  <h2 className={classes.gallery__item__content__location}>
-                    {location}
-                  </h2>
-                </div>
-                {isFeatured && (
-                  <div className={classes.gallery__item__tag}>JavaScript</div>
-                )}
-                {!isFeatured && (
-                  <div className={classes.gallery__item__tag}>C++</div>
-                )}
+                <div className={classes.gallery__item__box}>
+                  <img
+                    src={img}
+                    alt={location}
+                    className={classes.gallery__item__img}
+                  />
+                  <div className={classes.overlay} />
+                  <div className={classes.gallery__item__content}>
+                    <FaCodeBranch />
+                    <h2 className={classes.gallery__item__content__location}>
+                      {location}
+                    </h2>
+                  </div>
+                  {isFeatured && (
+                    <div className={classes.gallery__item__tag}>JavaScript</div>
+                  )}
+                  {!isFeatured && (
+                    <div className={classes.gallery__item__tag}>C++</div>
+                  )}
               </div>
+              <div className={classes.hovershadow}></div>
+              </div>
+              
             ))}
           </div>
           {!page && (

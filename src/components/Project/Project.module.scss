@@ -76,6 +76,10 @@
           }
         }
 
+        .box {
+          position: relative;
+        }
+
         &__img {
           border-top-left-radius: $borderRadius;
           border-top-right-radius: $borderRadius;
